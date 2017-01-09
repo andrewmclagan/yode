@@ -9,4 +9,4 @@ MAINTAINER andrewmclagan
 #
 
 RUN npm set progress=false && \
-    npm install -g --progress=false yarn
+    npm install -g --progress=false yarn 

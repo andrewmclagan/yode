@@ -8,5 +8,10 @@ MAINTAINER andrewmclagan
 #--------------------------------------------------------------------------
 #
 
+WORKDIR /var
+
+ADD package.json package.json
+
 RUN npm set progress=false && \
-    npm install -g --progress=false yarn 
+    npm install -g --progress=false yarn && \
+    yarn install
